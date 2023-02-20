@@ -1,0 +1,47 @@
+/* Reseta margem do navegador e inclui fontes padrão */
+body {
+  margin: 0; /* área de margem */
+  font-family: Arial, Helvetica, sans-serif; /* fontes que serão carregadas por padrão, na ordem em que aparecem no código */
+}
+
+/* Reseta estilos das ul */
+ul {
+  margin: 0; /* área de margem */
+  padding: 0; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+  list-style: none; /* remove os marcadores padrão de listas */
+}
+
+/* Reseta estilos de a */
+a {
+  text-decoration: none; /* remove decoração padrão de textos */
+}
+
+.header-bg {
+  background-color: #000000; /* Cor padrão background do cabeçalho */
+}
+
+.header {
+  display: flex; /* Coloca um item ao lado do outro */
+  flex-wrap: wrap; /* Se largura da tela for menor que a largura do site, quebra linha */
+  gap: 20px; /* cria espaço ao quebrar a linha */
+  justify-content: space-between; /* Distribui os itens uniformemente */
+  align-items: center; /* Itens alinhados ao centro  */
+  padding: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+  box-sizing: border-box; /* A largura e altura (e propriedades min/max) incluem conteúdo, padding e border */
+  padding: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+  max-width: 1200px; /* largura máxima do container */
+  margin: 0 auto; /* margem automática para centralizar os elementos da página (esquerda e direita) quando atingir o max-width */
+}
+
+.header-menu {
+  display: flex; /* Coloca um item ao lado do outro */
+  flex-wrap: wrap; /* Se largura da tela for menor que a largura do site, quebra linha */
+  gap: 40px; /* espaço entre cada link */
+}
+
+.header-menu a {
+  color: #ffffff; /* cor do texto */
+  display: inline-block; /* itens em linha e com possibilidade de ajustar width e demais espaçamentos */
+  padding: 16px 0; /* padding acima e abaixo para aumentar área de contato em telas touchscreen */
+  font-size: 18px; /* tamanho da fonte */
+}
