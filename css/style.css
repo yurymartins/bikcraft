@@ -16,6 +16,12 @@ a {
   text-decoration: none; /* remove decoração padrão de textos */
 }
 
+/* Estilos para as imagens do site */
+img {
+  width: 100%; /* Imagem adquire máximo de largura da tela */
+  display: block; /* faz com que o elemento HTML seja renderizado como bloco, assim como parágrafos e cabeçalhos */
+}
+
 .header-bg {
   background-color: #000000; /* Cor padrão background do cabeçalho */
 }
