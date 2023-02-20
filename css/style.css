@@ -26,11 +26,11 @@ a {
   gap: 20px; /* cria espaço ao quebrar a linha */
   justify-content: space-between; /* Distribui os itens uniformemente */
   align-items: center; /* Itens alinhados ao centro  */
-  padding: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
   box-sizing: border-box; /* A largura e altura (e propriedades min/max) incluem conteúdo, padding e border */
   padding: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
   max-width: 1200px; /* largura máxima do container */
-  margin: 0 auto; /* margem automática para centralizar os elementos da página (esquerda e direita) quando atingir o max-width */
+  margin-left: auto; /* margem automática para centralizar os elementos da página (esquerda) quando atingir o max-width */
+  margin-right: auto; /* margem automática para centralizar os elementos da página (direita) quando atingir o max-width */
 }
 
 .header-menu {
@@ -44,4 +44,54 @@ a {
   display: inline-block; /* itens em linha e com possibilidade de ajustar width e demais espaçamentos */
   padding: 16px 0; /* padding acima e abaixo para aumentar área de contato em telas touchscreen */
   font-size: 18px; /* tamanho da fonte */
+  position: relative; /* para alinhamento do elemento after que está como "absolute" */
+}
+
+/* after: usado para adicionar conteúdo de um elemento como a propriedade content */
+.header-menu a:after {
+  content: ""; /* em branco pois está sendo criado no código */
+  display: block; /* faz com que o elemento HTML seja renderizado como bloco, assim como parágrafos e cabeçalhos */
+  height: 2px; /* altura do elemento */
+  width: 0%; /* em relação ao elemento pai, valor inicial */
+  background: #ffffff; /* cor do elemento */
+  margin-top: 4px; /* margem ao topo para separar do elemento acima */
+  transition: 0.3s; /* tempo de transição no hover */
+  position: absolute; /* retira o "after" do fluxo para manter alinhamento anterior. Passa a ficar relacionado ao elemento pai "relative" */
+}
+
+.header-menu a:hover:after {
+  width: 100%; /* em relação ao elemento pai, valor final */
+}
+
+/* quando a tela for igual ou menor que o valor especificado, aplica esses estilos */
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px; /* diminui o espaçamento entre itens em relação ao espaçamento definido anteriormente */
+  }
+
+  .header-menu a {
+    background: #111111; /* mudança de cor para que a área de contato em telas touch fique mais visível */
+    padding: 12px 16px; /* padding para área de contato */
+    border-radius: 4px; /* define arredondamento nos cantos */
+  }
+
+  /* mudança de cor ao passar mouse/toque */
+  .header-menu a:hover {
+    background-color: #2e2e2e;
+  }
+
+  .header-menu a:after {
+    display: none; /* esconde elementos abaixo do menu criados para telas maiores */
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px; /* diminui o espaçamento entre itens em relação ao espaçamento definido anteriormente */
+  }
+
+  .header-menu a {
+    padding: 8px 12px; /* padding para área de contato */
+    font-size: 14px; /* tamanho da fonte */
+  }
 }
