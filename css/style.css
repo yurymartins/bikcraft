@@ -4,9 +4,15 @@ body {
   font-family: Arial, Helvetica, sans-serif; /* fontes que serão carregadas por padrão, na ordem em que aparecem no código */
 }
 
+/* reseta margens de h1, ul e p. Necessário para unir seções em divs sem conteúdos anteriores. */
+h1,
+ul,
+p {
+  margin: 0; /* área de margem */
+}
+
 /* Reseta estilos das ul */
 ul {
-  margin: 0; /* área de margem */
   padding: 0; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
   list-style: none; /* remove os marcadores padrão de listas */
 }
@@ -14,6 +20,7 @@ ul {
 /* Reseta estilos de a */
 a {
   text-decoration: none; /* remove decoração padrão de textos */
+  color: inherit; /* herda a cor do item "pai" */
 }
 
 /* Estilos para as imagens do site */
@@ -100,4 +107,71 @@ img {
     padding: 8px 12px; /* padding para área de contato */
     font-size: 14px; /* tamanho da fonte */
   }
+}
+
+/* seção principal */
+.introducao-bg {
+  background: #000000; /* cor fundo */
+  color: #ffffff; /* cor fonte */
+}
+
+/* container */
+.introducao {
+  display: grid; /* divide em grids */
+  grid-template-columns: 1fr 1fr; /* divide em dois grids de igual tamanho */
+  gap: 0 40px; /* espaçamento entre itens nas laterais */
+  box-sizing: border-box; /* A largura e altura (e propriedades min/max) incluem conteúdo, padding e border */
+  max-width: 1200px; /* largura máxima do container */
+  padding-left: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+  padding-right: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+  margin-left: auto; /* itens ficarão alinhados ao centro, independente da resolução da página */
+  margin-right: auto; /* itens ficarão alinhados ao centro, independente da resolução da página */
+}
+
+/* conteúdo da seção principal */
+.introducao-conteudo {
+  align-self: end; /* estabelece o alinhamento de um certo item dentro do bloco que o contém. */
+  padding-bottom: 80px; /* ajustar os itens definidos no align-self */
+}
+
+/* estilos de h1 dentro da classe introducao */
+.introducao h1 {
+  margin-bottom: 32px; /* ajuste de margem de h1 */
+  font-size: 64px; /* tamanho da fonte */
+  line-height: 1.125; /* espaçamento vertical da fonte */
+}
+
+/* estilos de span dentro da classe introducao > h1 */
+.introducao h1 span {
+  color: #ffbb00; /* cor do ponto decorativo */
+}
+
+/* estilos de p dentro da classe introducao */
+.introducao p {
+  margin-bottom: 20px; /* ajuste de margem de p */
+  font-size: 24px; /* tamanho da fonte */
+  line-height: 1.5; /* espaçamento vertical da fonte */
+  color: #b2b2b2; /* cor da fonte */
+}
+
+/* botão da seção principal */
+.introducao a {
+  display: inline-block; /* itens em linha e com possibilidade de ajustar width e demais espaçamentos */
+  padding: 16px 32px; /* espaçamento interno entre texto e background do botão */
+  background: linear-gradient(#ffbf00, #f2a50c); /* cor de fundo do botão */
+  border-radius: 4px; /* cantos arredondados */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* sombra de fundo */
+  text-transform: uppercase; /* transforma todas as letras em maiúsculas */
+  color: #332200; /* cor do texto do botão */
+  font-size: 24px; /* tamanho da fonte */
+  line-height: 1.33; /* altura da linha do texto */
+  font-weight: bold; /* fonte em negrito */
+}
+
+/* estilos aplicados ao passar mouse */
+.introducao a:hover {
+  background: linear-gradient(
+    #ffb60d,
+    #e59317
+  ); /* cor de fundo do botão ao passar mouse*/
 }
