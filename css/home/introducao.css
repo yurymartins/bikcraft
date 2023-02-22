@@ -1,0 +1,92 @@
+/* seção principal */
+.introducao-bg {
+  background: #000000; /* cor fundo */
+  color: #ffffff; /* cor fonte */
+  box-shadow: inset 0 -120px #ffffff; /* sombra para ilusão de foto vazada */
+}
+
+/* container */
+.introducao {
+  display: grid; /* divide em grids */
+  grid-template-columns: 1fr 1fr; /* divide em dois grids de igual tamanho */
+  gap: 0 40px; /* espaçamento entre itens nas laterais */
+  box-sizing: border-box; /* A largura e altura (e propriedades min/max) incluem conteúdo, padding e border */
+  max-width: 1200px; /* largura máxima do container */
+  padding-left: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+  padding-right: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
+  margin-left: auto; /* itens ficarão alinhados ao centro, independente da resolução da página */
+  margin-right: auto; /* itens ficarão alinhados ao centro, independente da resolução da página */
+}
+
+/* conteúdo da seção principal */
+.introducao-conteudo {
+  align-self: end; /* estabelece o alinhamento de um certo item dentro do bloco que o contém. */
+  padding-bottom: 200px; /* ajustar os itens definidos no align-self */
+}
+
+/* estilos de imagens dentro da classe introducao */
+.introducao img {
+  height: 100%; /* altura */
+  object-fit: cover; /* A imagem será cortada para caber no container, sem distorção */
+  border-radius: 4px; /* cantos arredondados */
+}
+
+/* estilos de h1 dentro da classe introducao */
+.introducao h1 {
+  margin-bottom: 32px; /* ajuste de margem de h1 */
+}
+
+/* estilos de span dentro da classe introducao > h1 */
+.introducao h1 span {
+  color: #ffbb00; /* cor do ponto decorativo */
+}
+
+/* estilos de p dentro da classe introducao */
+.introducao p {
+  margin-bottom: 20px; /* ajuste de margem de p */
+  color: #b2b2b2; /* cor da fonte */
+}
+
+/* quando a tela for igual ou menor que o valor especificado, aplica esses estilos */
+
+@media (max-width: 600px) {
+  .introducao a {
+    padding: 12px 16px; /* diminui espaçamento de botão */
+    font-size: 16px; /* diminui fonte de botão */
+  }
+}
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 48px; /* tamanho fonte título */
+  }
+
+  .introducao p {
+    font-size: 18px; /* tamanho fonte parágrafo */
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background: #111111; /* muda a cor de fundo */
+    padding-top: 40px; /* espaçamento do título em relação a navbar */
+    box-shadow: inset 0 -60px #ffffff; /* diminui espaço criado com a sombra para "vazar" imagem */
+  }
+
+  .introducao {
+    grid-template-columns: 1fr; /* muda o grid para uma coluna */
+  }
+
+  .introducao-conteudo {
+    padding: 0; /* remove padding anterior */
+  }
+
+  .introducao h1 {
+    font-size: 32px; /* tamanho fonte título */
+    margin-bottom: 16px; /* para ajustar espaçamento entre textos */
+  }
+
+  .introducao img {
+    height: 300px; /* altura da foto */
+    width: 100%; /* largura da foto ocupando toda a largura do container */
+  }
+}
