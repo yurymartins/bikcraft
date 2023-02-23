@@ -1,8 +1,7 @@
 /* seção principal */
 .introducao-bg {
-  background: #000000; /* cor fundo */
-  color: #ffffff; /* cor fonte */
-  box-shadow: inset 0 -120px #ffffff; /* sombra para ilusão de foto vazada */
+  background: var(--cor-12); /* cor fundo */
+  box-shadow: inset 0 -120px var(--cor-0); /* sombra para ilusão de foto vazada */
 }
 
 /* container */
@@ -38,13 +37,12 @@
 
 /* estilos de span dentro da classe introducao > h1 */
 .introducao h1 span {
-  color: #ffbb00; /* cor do ponto decorativo */
+  color: var(--cor-p1); /* cor do ponto decorativo */
 }
 
 /* estilos de p dentro da classe introducao */
 .introducao p {
   margin-bottom: 20px; /* ajuste de margem de p */
-  color: #b2b2b2; /* cor da fonte */
 }
 
 /* quando a tela for igual ou menor que o valor especificado, aplica esses estilos */
@@ -67,9 +65,9 @@
 
 @media (max-width: 800px) {
   .introducao-bg {
-    background: #111111; /* muda a cor de fundo */
+    background: var(--cor-11); /* muda a cor de fundo */
     padding-top: 40px; /* espaçamento do título em relação a navbar */
-    box-shadow: inset 0 -60px #ffffff; /* diminui espaço criado com a sombra para "vazar" imagem */
+    box-shadow: inset 0 -60px var(--cor-0); /* diminui espaço criado com a sombra para "vazar" imagem */
   }
 
   .introducao {

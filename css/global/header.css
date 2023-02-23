@@ -1,7 +1,7 @@
 /* Código CSS para Header */
 
 .header-bg {
-  background-color: #000000; /* Cor padrão background do cabeçalho */
+  background-color: var(--cor-12); /* Cor padrão background do cabeçalho */
 }
 
 .header {
@@ -24,7 +24,6 @@
 }
 
 .header-menu a {
-  color: #ffffff; /* cor do texto */
   display: inline-block; /* itens em linha e com possibilidade de ajustar width e demais espaçamentos */
   padding: 16px 0; /* padding acima e abaixo para aumentar área de contato em telas touchscreen */
   font-size: 18px; /* tamanho da fonte */
@@ -39,7 +38,7 @@
   display: block; /* faz com que o elemento HTML seja renderizado como bloco, assim como parágrafos e cabeçalhos */
   height: 2px; /* altura do elemento */
   width: 0%; /* em relação ao elemento pai, valor inicial */
-  background: #ffffff; /* cor do elemento */
+  background: var(--cor-0); /* cor do elemento */
   margin-top: 4px; /* margem ao topo para separar do elemento acima */
   transition: 0.3s; /* tempo de transição no hover */
   position: absolute; /* retira o "after" do fluxo para manter alinhamento anterior. Passa a ficar relacionado ao elemento pai "relative" */
@@ -56,7 +55,9 @@
   }
 
   .header-menu a {
-    background: #111111; /* mudança de cor para que a área de contato em telas touch fique mais visível */
+    background: var(
+      --cor-11
+    ); /* mudança de cor para que a área de contato em telas touch fique mais visível */
     padding: 12px 16px; /* padding para área de contato */
     border-radius: 4px; /* define arredondamento nos cantos */
   }
