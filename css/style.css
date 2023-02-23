@@ -1,37 +1,6 @@
 @import url(/css/global/global.css); /* estilos globais */
 @import url(/css/utilidades/tipografia.css); /* estilos das fontes */
+@import url(/css/utilidades/cores.css); /* cores do site */
 @import url(/css/global/header.css); /* estilos header */
 @import url(/css/utilidades/componentes.css); /* estilos componentes comuns (para reutilização) */
 @import url(/css/home/introducao.css); /* estilos seção principal */
-
-/* Reseta margem do navegador e inclui fontes padrão */
-body {
-  margin: 0; /* área de margem */
-  font-family: Arial, Helvetica, sans-serif; /* fontes que serão carregadas por padrão, na ordem em que aparecem no código */
-  padding-bottom: 600px;
-}
-
-/* reseta margens de h1, ul e p. Necessário para unir seções em divs sem conteúdos anteriores. */
-h1,
-ul,
-p {
-  margin: 0; /* área de margem */
-}
-
-/* Reseta estilos das ul */
-ul {
-  padding: 0; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
-  list-style: none; /* remove os marcadores padrão de listas */
-}
-
-/* Reseta estilos de a */
-a {
-  text-decoration: none; /* remove decoração padrão de textos */
-  color: inherit; /* herda a cor do item "pai" */
-}
-
-/* Estilos para as imagens do site */
-img {
-  width: 100%; /* Imagem adquire máximo de largura da tela */
-  display: block; /* faz com que o elemento HTML seja renderizado como bloco, assim como parágrafos e cabeçalhos */
-}
