@@ -19,6 +19,7 @@
 
 /* estilos de imagens dentro da classe introducao */
 .introducao img {
+  width: 100%; /* largura */
   height: 100%; /* altura */
   object-fit: cover; /* A imagem será cortada para caber no container, sem distorção */
   border-radius: 4px; /* cantos arredondados */

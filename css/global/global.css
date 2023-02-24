@@ -30,8 +30,9 @@ a {
 
 /* Estilos para as imagens do site */
 img {
-  width: 100%; /* imagem adquire máximo de largura da tela */
-  display: block; /* faz com que o elemento HTML seja renderizado como bloco, assim como parágrafos e cabeçalhos */
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* aplica estilo apenas em links terminados em .jpg (extensão) */

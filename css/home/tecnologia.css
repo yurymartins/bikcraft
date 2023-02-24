@@ -1,0 +1,84 @@
+.tecnologia-bg {
+  background-color: var(--cor-11); /* cor de fundo da seção */
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0); /* sombra para efeito de foto vazando para cima e baixo */
+}
+
+.tecnologia {
+  display: grid; /* seção como grid */
+  grid-template-columns: 1fr 1fr; /* grid em duas colunas de igual tamanho */
+  gap: 40px; /* espaçamento entre itens */
+}
+
+.tecnologia-imagem img {
+  width: 100%; /* largura da imagem dentro do container */
+  height: 100%; /* altura da imagem dentro do container */
+  object-fit: cover; /* como a imagem é disposta */
+  object-position: left; /* onde a imagem começa a cortar em diferentes tamanhos de tela */
+}
+
+.tecnologia-conteudo {
+  padding-top: 160px; /* espaçamento do conteúdo no efeito de foto vazada */
+  padding-bottom: 160px;
+}
+
+.tecnologia-conteudo > span /* aplica estilos apenas no item span específico (filho direto) com o sinal ">" */ {
+  display: block; /* retira o padrão que é display inline e o transforma em block */
+  margin-bottom: 20px;
+}
+
+.tecnologia-conteudo h2 {
+  margin-bottom: 32px;
+}
+
+.tecnologia-conteudo > p {
+  margin-bottom: 20px;
+}
+
+.tecnologia a {
+  margin-bottom: 80px;
+}
+
+/* para dividir em duas colunas a subseção */
+.tecnologia-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.tecnologia-vantagens h3 {
+  margin-bottom: 8px;
+  width: max-content; /* impede a quebra de conteúdo */
+}
+
+.tecnologia-vantagens img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+  .tecnologia-bg {
+    box-shadow: initial; /* retorna ao valor inicial */
+  }
+
+  .tecnologia {
+    grid-template-columns: 1fr; /* muda para uma coluna */
+  }
+
+  .tecnologia-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .tecnologia-imagem {
+    display: none; /* remove imagem decorativa */
+  }
+
+  .tecnologia a {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
+}
