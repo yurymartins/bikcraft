@@ -10,11 +10,8 @@
   gap: 20px; /* cria espaço ao quebrar a linha */
   justify-content: space-between; /* Distribui os itens uniformemente */
   align-items: center; /* Itens alinhados ao centro  */
-  box-sizing: border-box; /* A largura e altura (e propriedades min/max) incluem conteúdo, padding e border */
-  padding: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
-  max-width: 1200px; /* largura máxima do container */
-  margin-left: auto; /* margem automática para centralizar os elementos da página (esquerda) quando atingir o max-width */
-  margin-right: auto; /* margem automática para centralizar os elementos da página (direita) quando atingir o max-width */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-menu {

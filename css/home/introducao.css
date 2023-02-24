@@ -9,12 +9,6 @@
   display: grid; /* divide em grids */
   grid-template-columns: 1fr 1fr; /* divide em dois grids de igual tamanho */
   gap: 0 40px; /* espaçamento entre itens nas laterais */
-  box-sizing: border-box; /* A largura e altura (e propriedades min/max) incluem conteúdo, padding e border */
-  max-width: 1200px; /* largura máxima do container */
-  padding-left: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
-  padding-right: 20px; /* define uma a distância entre o conteúdo de um elemento e suas bordas. */
-  margin-left: auto; /* itens ficarão alinhados ao centro, independente da resolução da página */
-  margin-right: auto; /* itens ficarão alinhados ao centro, independente da resolução da página */
 }
 
 /* conteúdo da seção principal */
@@ -53,6 +47,7 @@
     font-size: 16px; /* diminui fonte de botão */
   }
 }
+
 @media (max-width: 1200px) {
   .introducao h1 {
     font-size: 48px; /* tamanho fonte título */
@@ -72,6 +67,7 @@
 
   .introducao {
     grid-template-columns: 1fr; /* muda o grid para uma coluna */
+    gap: 32px;
   }
 
   .introducao-conteudo {
@@ -79,7 +75,6 @@
   }
 
   .introducao h1 {
-    font-size: 32px; /* tamanho fonte título */
     margin-bottom: 16px; /* para ajustar espaçamento entre textos */
   }
 

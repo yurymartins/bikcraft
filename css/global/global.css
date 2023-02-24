@@ -8,6 +8,9 @@ body {
 
 /* reseta margens de h1, ul e p. Necessário para unir seções em divs sem conteúdos anteriores. */
 h1,
+h2,
+h3,
+h4,
 ul,
 p {
   margin: 0; /* área de margem */
@@ -27,6 +30,11 @@ a {
 
 /* Estilos para as imagens do site */
 img {
-  width: 100%; /* Imagem adquire máximo de largura da tela */
+  width: 100%; /* imagem adquire máximo de largura da tela */
   display: block; /* faz com que o elemento HTML seja renderizado como bloco, assim como parágrafos e cabeçalhos */
+}
+
+/* aplica estilo apenas em links terminados em .jpg (extensão) */
+img[src$=".jpg"] {
+  border-radius: 4px;
 }

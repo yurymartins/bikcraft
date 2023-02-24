@@ -4,3 +4,4 @@
 @import url(/css/global/header.css); /* estilos header */
 @import url(/css/utilidades/componentes.css); /* estilos componentes comuns (para reutilização) */
 @import url(/css/home/introducao.css); /* estilos seção principal */
+@import url(/css/bicicletas/bicicletas-lista.css); /* estilos seção "escolha a sua" */

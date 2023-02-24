@@ -13,17 +13,17 @@
   <link rel="stylesheet" href="/css/style.css"> <!-- Link do arquivo CSS -->
 
   <!-- Fontes Google Fonts -->
-  <link rel="preconnect" href="http://fonts.googleapis.com">
-  <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> <!-- Fontes Poppins pesos 400 e 600 e Roboto 400 e 500 -->
 </head>
 
 <body> <!-- Corpo do site, o que aparecerá no site final -->
   <header class="header-bg"> <!-- Cabeçalho -->
-    <div class="header"> <!-- Container para segurar essa área por ter cor diferente do background de ponta a ponta - aula 1004 -->
+    <div class="header container"> <!-- Container para segurar essa área por ter cor diferente do background de ponta a ponta - aula 1004 -->
       <a href="/"><img src="/img/bikcraft.svg" alt="Bikcraft"></a> <!-- src = link da logo. alt = descrição se a logo não for exibida corretamente -->
       <nav aria-label="primaria"> <!-- descrição de um elemento, semântica -->
-        <ul class="header-menu cor-0"> <!-- lista sem ordem específica -->
+        <ul class="header-menu font-1-m cor-0"> <!-- lista sem ordem específica -->
           <li><a href="/bicicletas.html">Bicicletas</a> <!-- li = item da lista a = link -->
           </li>
           <li><a href="/seguros.html">Seguros</a>
@@ -37,10 +37,10 @@
 
   <!-- Seção principal do site recebe a tag "main" -->
   <main class="introducao-bg">
-    <div class="introducao"> <!-- container -->
+    <div class="container introducao"> <!-- container -->
       <div class="introducao-conteudo"> <!-- onde ficará o conteúdo em si -->
-        <h1 class="texto-grande cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1> <!-- H1 - Nível de seção mais alto para título -->
-        <p class="texto-medio cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p> <!-- p = parágrafo -->
+        <h1 class="font-1-xxl cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1> <!-- H1 - Nível de seção mais alto para título -->
+        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p> <!-- p = parágrafo -->
         <a class="botao" href="/bicicletas.html">Escolha a sua</a> <!-- Botão que levará a referida página -->
       </div>
       <div>
@@ -48,8 +48,35 @@
       </div> <!-- Obs: não usar imagens dentro do grid por questões de incompatibilidade com browsers -->
     </div>
   </main>
+  <article class="bicicletas-lista">
 
-  <h2 class="texto-grande">escolha a sua<span class="cor-p1">.</span></h2>
+    <!-- Seção de bicicletas da homepage-->
+    <h2 class="container font-1-xxl">escolha a sua<span class="cor-p1">.</span></h2>
+
+    <ul> <!--Criado como lista por semântica-->
+      <li>
+        <a href="/bicicletas/magic.html"> <!-- link para a página específica ao clicar no item -->
+          <img src="/img/bicicletas/magic-home.jpg" alt="Bicicleta preta"> <!-- imagem do item da lista-->
+          <h3 class="font-1-xl">Magic Might</h3> <!-- título do item da lista-->
+          <span class="font-2-m cor-8">R$ 4.999</span> <!-- preço do item da lista-->
+        </a>
+      </li>
+      <li>
+        <a href="/bicicletas/nimbus.html"> <!-- link para a página específica ao clicar no item -->
+          <img src="/img/bicicletas/nimbus-home.jpg" alt="Bicicleta preta"> <!-- imagem do item da lista-->
+          <h3 class="font-1-xl">Nimbus Stark</h3> <!-- título do item da lista-->
+          <span class="font-2-m cor-8">R$ 3.999</span> <!-- preço do item da lista-->
+        </a>
+      </li>
+      <li>
+        <a href="/bicicletas/nebula.html"> <!-- link para a página específica ao clicar no item -->
+          <img src="/img/bicicletas/nebula-home.jpg" alt="Bicicleta preta"> <!-- imagem do item da lista-->
+          <h3 class="font-1-xl">Nebula Cosmic</h3> <!-- título do item da lista-->
+          <span class="font-2-m cor-8">R$ 2.499</span> <!-- preço do item da lista-->
+        </a>
+      </li>
+    </ul>
+  </article>
 </body>
 
 </html>

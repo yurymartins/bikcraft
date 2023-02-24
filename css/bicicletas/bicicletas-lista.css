@@ -1,0 +1,67 @@
+.bicicletas-lista {
+  padding-top: 60px; /* Nesse caso padding é melhor que margin para criar espaçamento pois evita-se colisão  */
+  padding-bottom: 120px;
+}
+
+.bicicletas-lista h2 {
+  margin-bottom: 40px;
+}
+
+.bicicletas-lista ul {
+  display: flex; /* coloca itens um ao lado do outro */
+  gap: 40px; /* espaço entre os itens */
+  padding: 0 20px 20px 20px; /* espaçamento topo e fundo */
+  max-width: 1400px; /* tamanho máximo do container */
+  margin-left: auto; /* margem automática esquerda */
+  margin-right: auto; /* margem automática direita */
+  overflow-x: auto; /* cria uma barra de scroll se o elemento "vazar" do container no eixo X */
+}
+
+.bicicletas-lista li {
+  flex: 1; /* define o item como flexível */
+  min-width: 280px; /* imagem não diminuem mais que o valor especificado na responsividade */
+}
+
+.bicicletas-lista a {
+  display: block; /* organiza o item e título como apenas um bloco */
+}
+
+.bicicletas-lista img {
+  margin-bottom: 16px; /* margem abaixo */
+}
+
+.bicicletas-lista h3 {
+  margin-bottom: 8px; /* margem abaixo */
+  display: flex; /* coloca itens um ao lado do outro */
+  align-items: center; /* alinhamento ao centro */
+}
+
+.bicicletas-lista h3::before {
+  content: ""; /* conteúdo em branco para criar abaixo */
+  display: inline-block; /* itens em linha e com possibilidade de ajustar width e demais espaçamentos */
+  height: 8px; /* altura do item "content" */
+  width: 12px; /* largura do item "content" */
+  margin-right: 8px; /* margem à direita do item "content" */
+  background-color: var(--cor-p1); /* cor de fundo do item "content" */
+  transition: width 0.2s; /* transição no hover */
+}
+
+/* animação no ícone decorativo ao passar o mouse */
+.bicicletas-lista a:hover h3::before {
+  width: 24px;
+}
+
+.bicicletas-lista li span {
+  padding-left: 20px; /* margem interna à esquerda*/
+}
+
+/* aplica os estilos abaixo em telas com máximo de 800px de largura */
+@media (max-width: 800px) {
+  .bicicletas-lista {
+    padding-bottom: 60px; /* margem interna abaixo */
+  }
+
+  .bicicletas-lista ul {
+    gap: 20px; /* espaçamento entre itens */
+  }
+}
