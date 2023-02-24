@@ -1,8 +1,15 @@
 @import url(/css/global/global.css); /* estilos globais */
 @import url(/css/global/header.css); /* estilos header */
+
 @import url(/css/utilidades/tipografia.css); /* estilos das fontes */
 @import url(/css/utilidades/cores.css); /* cores do site */
 @import url(/css/utilidades/componentes.css); /* estilos componentes comuns (para reutilização) */
+
 @import url(/css/home/introducao.css); /* estilos seção principal */
 @import url(/css/home/tecnologia.css); /* estilos seção tecnologia */
+@import url(/css/home/parceiros.css); /* estilos seção parceiros */
+@import url(/css/home/depoimento.css); /* estilos seção depoimento */
+
 @import url(/css/bicicletas/bicicletas-lista.css); /* estilos seção "escolha a sua" */
+
+@import url(/css/seguros/seguros.css);

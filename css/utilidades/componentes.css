@@ -18,11 +18,21 @@
   text-transform: uppercase; /* transforma todas as letras em maiúsculas */
   color: var(--cor-p5); /* cor do texto do botão */
   font: 600 1.125rem/1.33 "Poppins", sans-serif; /* Peso, tamanho, espaçamento, tipo fonte */
+  max-width: max-content; /* não se expande mais que o tamanho do próprio item */
 }
 
 /* estilos aplicados ao passar mouse */
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
+.botao.secundario:hover {
+  background: var(--cor-9);
 }
 
 @media (max-width: 600px) {
