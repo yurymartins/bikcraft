@@ -3,7 +3,6 @@ body {
   margin: 0; /* área de margem */
   font-family: Arial, Helvetica, sans-serif; /* fontes que serão carregadas por padrão, na ordem em que aparecem no código */
   color: var(--cor-11); /* cor padrão da tipografia */
-  padding-bottom: 600px;
 }
 
 /* reseta margens de h1, ul e p. Necessário para unir seções em divs sem conteúdos anteriores. */

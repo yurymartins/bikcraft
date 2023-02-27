@@ -1,5 +1,6 @@
 @import url(/css/global/global.css); /* estilos globais */
-@import url(/css/global/header.css); /* estilos header */
+@import url(/css/global/header.css); /* estilos cabeçalho */
+@import url(/css/global/footer.css); /* estilos rodapé */
 
 @import url(/css/utilidades/tipografia.css); /* estilos das fontes */
 @import url(/css/utilidades/cores.css); /* cores do site */
@@ -13,3 +14,5 @@
 @import url(/css/bicicletas/bicicletas-lista.css); /* estilos seção "escolha a sua" */
 
 @import url(/css/seguros/seguros.css);
+
+@import url(/css/termos/termos.css);
