@@ -14,7 +14,9 @@
 @import url(/css/bicicletas/bicicletas.css); /* estilos seção "bicicletas" */
 @import url(/css/bicicletas/bicicletas-lista.css); /* estilos seção "escolha a sua" */
 
-@import url(/bicicletas/bicicleta.css);
+@import url(/css/bicicleta/bicicleta.css);
+
+@import url(/css/bicicleta/seguro.css);
 
 @import url(/css/seguros/seguros.css);
 
