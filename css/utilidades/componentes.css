@@ -19,6 +19,8 @@
   color: var(--cor-p5); /* cor do texto do botão */
   font: 600 1.125rem/1.33 "Poppins", sans-serif; /* Peso, tamanho, espaçamento, tipo fonte */
   max-width: max-content; /* não se expande mais que o tamanho do próprio item */
+  border: none;
+  cursor: pointer;
 }
 
 /* estilos aplicados ao passar mouse */

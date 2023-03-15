@@ -5,6 +5,7 @@
 @import url(/css/utilidades/tipografia.css); /* estilos das fontes */
 @import url(/css/utilidades/cores.css); /* cores do site */
 @import url(/css/utilidades/componentes.css); /* estilos componentes comuns (para reutilização) */
+@import url(/css/utilidades/formulario.css); /* estilos de formulário */
 
 @import url(/css/home/introducao.css); /* estilos seção principal */
 @import url(/css/home/tecnologia.css); /* estilos seção tecnologia */
@@ -15,13 +16,13 @@
 @import url(/css/bicicletas/bicicletas-lista.css); /* estilos seção "escolha a sua" */
 
 @import url(/css/bicicleta/bicicleta.css);
-
 @import url(/css/bicicleta/seguro.css);
 
 @import url(/css/seguros/seguros.css);
+@import url(/css/seguros/vantagens.css);
+@import url(/css/seguros/perguntas.css);
 
 @import url(/css/termos/termos.css);
 
-@import url(/css/seguros/vantagens.css);
-
-@import url(/css/seguros/perguntas.css);
+@import url(/css/contato/contato.css);
+@import url(/css/contato/lojas.css);
