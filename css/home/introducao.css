@@ -1,6 +1,7 @@
 /* seção principal */
 .introducao-bg {
-  background: var(--cor-12); /* cor fundo */
+  background: var(--cor-12) url(/img/dec/bottom-left.svg) no-repeat bottom 160px
+    left 20px; /* cor fundo + imagem decorativa com posicionamento */
   box-shadow: inset 0 -120px var(--cor-0); /* sombra para ilusão de foto vazada */
 }
 
